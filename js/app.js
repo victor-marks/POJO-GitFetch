@@ -5,12 +5,12 @@ const unContainer = document.querySelector('.main__profile-username');
 const reposContainer = document.querySelector('.main__profile-repos');
 const urlContainer = document.querySelector('.main__profile-url');
 
-const client_id = 'Iv1.78f89d07f5a372d1';
-const client_secret = '8521c44e37b59c9ac99d9d0726ce35d4332ca87d';
+const id = 'Iv1.78f89d07f5a372d1';
+const sec = '8521c44e37b59c9ac99d9d0726ce35d4332ca87d';
 
 const fetchUsers = async user => {
   const api_call = await fetch(
-    `https://api.github.com/users/${user}?client_id=${client_id}&client_secret=${client_secret}`
+    `https://api.github.com/users/${user}?client_id=${id}&client_secret=${sec}`
   );
 
   const data = await api_call.json();
